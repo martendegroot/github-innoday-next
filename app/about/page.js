@@ -1,10 +1,7 @@
-import Layout from '../components/layout'
-import Sidebar from '../components/sidebar'
-
-export default function Contact() {
+export default function About() {
   return (
     <section>
-      <h2>Layout Example (Contact)</h2>
+      <h2>Layout Example (About)</h2>
       <p>
         This example adds a property <code>getLayout</code> to your page,
         allowing you to return a React component for the layout. This allows you
@@ -12,7 +9,7 @@ export default function Contact() {
         function, we can have complex nested layouts if desired.
       </p>
       <p>
-        When navigating between pages, we want to persist page state (input
+        When navigating between pages, we want to persist page state (input
         values, scroll position, etc.) for a Single-Page Application (SPA)
         experience.
       </p>
@@ -24,19 +21,10 @@ export default function Contact() {
       </p>
       <h3>Try It Out</h3>
       <p>
-        To visualize this, try tying in the search input in the{' '}
+        To visualize this, try tying in the search input in the{" "}
         <code>Sidebar</code> and then changing routes. You'll notice the input
         state is persisted.
       </p>
     </section>
-  )
-}
-
-Contact.getLayout = function getLayout(page) {
-  return (
-    <Layout>
-      <Sidebar />
-      {page}
-    </Layout>
-  )
+  );
 }

@@ -1,7 +1,4 @@
-import Layout from '../components/layout'
-import Sidebar from '../components/sidebar'
-
-export default function Index() {
+export default function Page() {
   return (
     <section>
       <h2>Layout Example (Index)</h2>
@@ -12,7 +9,7 @@ export default function Index() {
         function, we can have complex nested layouts if desired.
       </p>
       <p>
-        When navigating between pages, we want to persist page state (input
+        When navigating between pages, we want to persist page state (input
         values, scroll position, etc) for a Single-Page Application (SPA)
         experience.
       </p>
@@ -24,19 +21,10 @@ export default function Index() {
       </p>
       <h3>Try It Out</h3>
       <p>
-        To visualize this, try typing in the search input in the{' '}
+        To visualize this, try typing in the search input in the{" "}
         <code>Sidebar</code> and then changing routes. You'll notice the input
         state is persisted.
       </p>
     </section>
-  )
-}
-
-Index.getLayout = function getLayout(page) {
-  return (
-    <Layout>
-      <Sidebar />
-      {page}
-    </Layout>
-  )
+  );
 }
